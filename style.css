@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+a, h1, h2, h3, h4 h5, h6, input, button {
+    color: rgb(66 32 6 / 0.5);
+    color: rgba(66, 32, 6, 0.5);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 80px auto 64px;
+    background-color: #F9F5F1;
+}
+
+header {
+    background-color: #ffffff;
+    display: grid;
+    align-content: center;
+    & > .container {
+        display: grid;
+        grid-template-columns: 160px 1fr 310.75px 80.83px;
+        align-content: center;
+        column-gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    
+
+
+    & > div {
+        background-color: #32c072;
+    }
+    & > ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 12px;
+
+        & > li {
+            background-color: #c6c6c6;
+        }
+
+    }
+
+    & form {
+        background-color: #c03285;
+        & > input {
+            width: 100%;
+        }
+    }
+    }
+}
+
+main {
+    box-shadow: 0 0 5px  #e6e6e6;
+    & .container {
+        padding: 24px 16px;
+    }
+}
+footer {
+    background-color: #32c072;
+}
