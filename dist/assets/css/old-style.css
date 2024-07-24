@@ -312,3 +312,10 @@ footer {
 @media (min-width: 1536px) {
     
 }
+
+
+.dark {
+    & header {
+        ba
+    }
+}

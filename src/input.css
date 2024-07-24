@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body > div {
+    @apply transition-colors duration-300 ease-linear;
+  }
+  button {
+    @apply px-6 py-2 border rounded-xl text-lg font-semibold;
+  }
+}
+
+@layer components {
+  #toggle-dark-mode  {
+    @apply  cursor-pointer;
+  }
+  #toggle-dark-mode.active  {
+    @apply bg-slate-300 ;
+  }
+  #toggle-dark-mode > div {
+    @apply rotate-0;
+  }
+  #toggle-dark-mode.active > div {
+    @apply bg-slate-950 text-yellow-500 -rotate-180;
+  }
+  #toggle-dark-mode.active > div > svg:first-child {
+    @apply block;
+  }
+  #toggle-dark-mode.active > div > svg:last-child {
+    @apply hidden;
+  }
+}
